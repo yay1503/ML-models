@@ -35,40 +35,6 @@ This project is built primarily on the Python data science ecosystem with a heav
 3.  **Training Loop:** Iterative optimization using loss functions (e.g., `CrossEntropyLoss`, `L1Loss`) and optimizers (e.g., `SGD`, `Adam`).
 4.  **Evaluation & Visualization:** The `helper_functions.py` script abstracts away the complex matplotlib code to visualize decision boundaries, loss curves, and actual vs. predicted images.
 
-## 🏁 Getting Started
-
-### Prerequisites
-
-Ensure you have the following installed on your system:
-*   Python 3.8 or higher
-*   Git
-*   (Optional but recommended) A CUDA-compatible GPU for faster training.
-
-### Installation
-
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/yourusername/pytorch-ml-models.git
-    cd pytorch-ml-models
-    ```
-
-2.  **Create a virtual environment (Recommended):**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows use: venv\Scripts\activate
-    ```
-
-3.  **Install dependencies:**
-    ```bash
-    pip install torch torchvision torchaudio
-    pip install matplotlib numpy jupyter requests
-    ```
-
-4.  **Launch Jupyter Notebook:**
-    ```bash
-    jupyter notebook
-    ```
-
 ## 💻 Usage
 
 Once Jupyter is running, open any of the `.ipynb` files to run the models. The notebooks are structured sequentially to guide you through data preparation, model building, training, and evaluation.
