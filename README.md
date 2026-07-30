@@ -35,30 +35,6 @@ This project is built primarily on the Python data science ecosystem with a heav
 3.  **Training Loop:** Iterative optimization using loss functions (e.g., `CrossEntropyLoss`, `L1Loss`) and optimizers (e.g., `SGD`, `Adam`).
 4.  **Evaluation & Visualization:** The `helper_functions.py` script abstracts away the complex matplotlib code to visualize decision boundaries, loss curves, and actual vs. predicted images.
 
-## 💻 Usage
-
-Once Jupyter is running, open any of the `.ipynb` files to run the models. The notebooks are structured sequentially to guide you through data preparation, model building, training, and evaluation.
-
-**Example: Visualizing Model Predictions**
-
-You can leverage the built-in helper functions within your notebooks to easily visualize how well your trained model is performing:
-
-```python
-import torch
-from helper_functions import plot_loss_curves, pred_and_plot_image
-
-# Assuming 'results' is a dictionary generated during your training loop
-plot_loss_curves(results)
-
-# Make a prediction on a single image and visualize it
-pred_and_plot_image(
-    model=trained_model,
-    image_path="data/test_image.jpg",
-    class_names=["T-shirt/top", "Trouser", "Pullover", "Dress", "Coat", "Sandal", "Shirt", "Sneaker", "Bag", "Ankle boot"],
-    device="cuda" if torch.cuda.is_available() else "cpu"
-)
-```
-
 ## 📂 Project Structure
 
 ```text
